@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Expense</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+        body { background: linear-gradient(135deg, #84fab0, #8fd3f4); color: white; text-align: center; padding-top: 60px; }
+        nav { background: rgba(0, 0, 0, 0.8); padding: 15px; position: fixed; width: 100%; top: 0; }
+        nav ul { list-style: none; padding: 0; }
+        nav ul li { display: inline; margin: 0 15px; }
+        nav a { color: white; text-decoration: none; font-size: 18px; transition: 0.3s; }
+        nav a:hover { color: yellow; }
+        .container { width: 50%; margin: auto; background: rgba(255, 255, 255, 0.2); padding: 20px; border-radius: 10px; }
+        input, select { width: 90%; padding: 10px; margin: 10px 0; border: none; border-radius: 5px; }
+        .btn { background: yellow; color: black; padding: 12px 20px; border: none; cursor: pointer; }
+        .btn:hover { background: orange; }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="profile.html">Profile</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h2>Add Expense</h2>
+        <form>
+            <input type="text" placeholder="Expense Title" required>
+            <input type="number" placeholder="Amount (Rs)" required>
+            <select>
+                <option value="food">Food</option>
+                <option value="transport">Transport</option>
+                <option value="entertainment">Entertainment</option>
+            </select>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
